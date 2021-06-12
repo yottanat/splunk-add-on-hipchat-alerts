@@ -1,14 +1,15 @@
-[hipchat]
+[linenotify]
 
 param.base_url = <string>
-* HipChat API base URL - adjust if you're using you own server on premise
+* linenotify API base URL - adjust if you're using you own server on premise
+* https://notify-api.line.me/api/notify
 
 param.auth_token = <string>
-* HipChat OAuth2 token 
-* see https://www.hipchat.com/docs/apiv2/auth
+* linenotify OAuth2 token 
+* see "seitgHNDlcJLoKYgv8FoWHNndJVtkslQ2WFYgmMcop4"
 
 param.notification_type = [message|card]
-* Specify whether to send the notification as a plain message or a card using the new HipchatConnect API. 
+* Specify whether to send the notification as a plain message or a card using the new linenotify API. 
 
 param.card_icon = <string>
 * If notification_type is card, this URL will be supplied for the icon of the card. 

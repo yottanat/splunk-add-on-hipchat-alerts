@@ -1,45 +1,26 @@
-# HipChat alert settings
+# Line alert settings
 
-action.hipchat = [0|1]
-* Enable hipchat notification
+action.line = [0|1]
+* Enable line notification
 
-action.hipchat.param.room = <string>
+action.line.param.room = <string>
 * Name of the room to send the notification to
 * (required)
 
-action.hipchat.param.message = <string>
-* The message to send to the hipchat room. 
+action.line.param.message = <string>
+* The message to send to the line room. 
 * (required)
 
-action.hipchat.param.message_format = [html|text]
+action.line.param.message_format = [html|text]
 * The format of the room notification (optional)
 * Default is "html"
 * (optional)
 
-action.hipchat.param.color = [red|green|blue|yellow|grey]
-* Background color of the room notification (optional)
+action.line.param.auth_token = <string>
+* Override line API auth token from global alert_actions config
 * (optional)
 
-action.hipchat.param.notify = [1|0]
-* Notify users in the room
-* Defaults to 0 (not notifying users in the room)
-* (optional)
+action.line.param.notification_type = [message|card]
+* Specify whether to send the notification as a plain message or a card using the new lineConnect API. 
 
-action.hipchat.param.auth_token = <string>
-* Override Hipchat API auth token from global alert_actions config
-* (optional)
 
-action.hipchat.param.auth_token_override = <string>
-* Override Hipchat API auth token from global alert_actions config. Takes precedence over auth_token
-* (optional)
-
-action.hipchat.param.notification_type = [message|card]
-* Specify whether to send the notification as a plain message or a card using the new HipchatConnect API. 
-
-action.hipchat.param.card_icon = <string>
-* If notification_type is card, this URL will be supplied for the icon of the card. 
-* (optional)
-
-action.hipchat.param.card_attributes = <string> 
-* A list of fields to include in the card. Supports glob-style wildcards.
-* (optional)

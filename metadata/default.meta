@@ -1,7 +1,7 @@
 []
 access = read : [ * ], write : [ admin ]
 
-[alert_actions/hipchat]
+[alert_actions/linenotify]
 export = system
 
 [alerts]
